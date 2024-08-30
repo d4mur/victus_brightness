@@ -1,0 +1,14 @@
+--- a/drivers/gpu/drm/amd/amdgpu/amdgpu_acpi.c	2024-08-30 09:33:14.458375919 +0200
++++ b/drivers/gpu/drm/amd/amdgpu/amdgpu_acpi.c	2024-08-30 09:33:23.807382774 +0200
+@@ -383,6 +383,11 @@
+ 			characteristics.min_input_signal;
+ 	atif->backlight_caps.max_input_signal =
+ 			characteristics.max_input_signal;
++ 
++  // Workaround to bypass the brightness limits
++  atif->backlight_caps.min_input_signal = 0;
++  atif->backlight_caps.max_input_signal = 255;
++
+ out:
+ 	kfree(info);
+ 	return err;
