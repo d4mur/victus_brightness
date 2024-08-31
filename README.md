@@ -41,7 +41,7 @@ patch -p1 < max_brightness.patch
 
 4. **Rebuild the amdgpu module:**
 
-Compile the updated kernel module. If you have a custom .config, copy it to the directory and run:
+If you have a custom .config, copy it to the directory and run:
 ```bash
 make oldconfig
 ```
