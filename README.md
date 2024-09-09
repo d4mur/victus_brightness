@@ -17,7 +17,7 @@ Applying this patch requires a basic understanding of kernel compilation and mod
 ## Instructions
 >**Note 1:** The following instructions have only been tested on Slackware Current. If you're using a different distribution, please refer to a specific guide for rebuilding a kernel module on your system.
 > ___
->**Note 2:** For Arch Linux users: follow this [guide](https://wiki.archlinux.org/title/Kernel/Arch_build_system) and edit the PKGBUILD file by adding these lines inside the **prepare** function, after the >line `local src`:
+>**Note 2:** For Arch Linux users: follow this [guide](https://wiki.archlinux.org/title/Kernel/Arch_build_system) and edit the PKGBUILD file by adding these lines inside the **prepare** function, after the line `local src`:
 >
 >```bash
 >echo "Patching the amdgpu driver to fix the Victus brightness issue"
