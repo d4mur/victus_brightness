@@ -12,9 +12,21 @@ The provided patch is a workaround for the `amdgpu` kernel module, that adjusts 
 
 ## Warning
 
-Applying this patch requires a basic understanding of kernel compilation and module management. Ensure that you are comfortable with these tasks before proceeding, as improper application can affect system stability.
+Applying this patch requires a basic understanding of kernel compilation and module management. Please make sure that you are comfortable with these tasks before proceeding, as improper application can affect system stability.
 
 ## Instructions
+>**Note 1:** The following instructions have only been tested on Slackware Current. If you're using a different distribution, please refer to a specific guide for rebuilding a kernel module on your system.
+> ___
+>**Note 2:** For Arch Linux users: follow this [guide](https://wiki.archlinux.org/title/Kernel/Arch_build_system) and edit the PKGBUILD file by adding these lines inside the **prepare** function, after the >line `local src`:
+>
+>```bash
+>echo "Patching the amdgpu driver to fix the Victus brightness issue"
+>wget https://raw.githubusercontent.com/d4mur/victus_brightness/main/max_brightness.patch
+>patch -p1 < ./max_brightness.patch
+>```
+>For more information, check out this [discussion](https://github.com/d4mur/victus_brightness/issues/1)
+> ___
+
 
 To apply the patch, follow these steps:
 
