@@ -1,5 +1,9 @@
 # Temporary patch for brightness issue on HP Victus 15 running Linux
 
+## UPDATE
+This patch is now outdated. The kernel developers have released a better solution [here](https://lore.kernel.org/amd-gfx/18bf1d43-b02f-4be2-ab14-03e127c147bf@amd.com/T/#m0da93bc11e69f361ffd2f48277d07cbaf30bae9c).
+It will be included in a future kernel release.
+
 ## Overview
 
 This repository provides a temporary patch for a brightness issue found in some HP Victus 15 laptops equipped with an AMD APU and Nvidia GPU. On these systems, running Linux, the maximum screen brightness is often stuck at a very low level, making the display difficult to use in well-lit environments.
