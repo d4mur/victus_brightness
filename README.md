@@ -1,7 +1,7 @@
 # Temporary patch for brightness issue on HP Victus 15 running Linux
 
 ## *** UPDATE ***
-The problem has been fixed in kernel branches 6.6.x, 6.10.x, and 6.11.x starting from versions 6.6.54, 6.10.13, and 6.11.2, so the patch is no longer necessary.
+The problem has been fixed in kernel versions 6.6.x, 6.10.x, and 6.11.x starting from releases 6.6.54, 6.10.13, and 6.11.2, so the patch is no longer necessary.
 
 ~~This patch is now outdated. The kernel developers have released a better solution [here](https://lore.kernel.org/amd-gfx/18bf1d43-b02f-4be2-ab14-03e127c147bf@amd.com/T/#m0da93bc11e69f361ffd2f48277d07cbaf30bae9c).
 It will be included in a future kernel release.~~
